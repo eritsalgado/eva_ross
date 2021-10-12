@@ -28,13 +28,13 @@ body{
 }
 
 
-@media (max-width: 800px) {
-    .columna{
-        flex: 50%;
-    }
-}
 @media (max-width: 600px) {
     .columna{
         flex: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .columna{
+        flex: 50%;
     }
 }
