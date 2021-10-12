@@ -24,7 +24,7 @@ $('#galeria').click((e)=> {
             break;
         
             default:
-                console.log("default")
+                // Se queda en la misma página
         }
     });
 })
