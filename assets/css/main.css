@@ -1,0 +1,192 @@
+@import url('./fonts.css');
+@import url('./general.css');
+
+/* PAGINA PRINCIPAL */
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/* SECCION INTRO */
+.intro{
+    width: 100%;
+    height: calc( 100vh - 80px );
+    background-image: url('../img/01.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro{
+    color:white;
+    letter-spacing: 0.15em;
+    text-shadow: rgb(0 0 0 / 40%) 0px 4px 5px;
+}
+.intro span,
+.intro small
+{
+    text-shadow: none;
+}
+/* SECCION INTRO */
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/* SECCION EVENTO */
+.evento{
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+.tarjeta_evento{
+    height: 550px;
+    position: absolute;
+}
+.tarjeta_evento img{
+    object-fit: cover;
+    position: absolute;
+    top: 90px;
+    z-index: 1;
+}
+.tarjeta{
+    padding: 60px 0 20px;
+    position: absolute;
+    background-color: var(--bg_anuncio);
+    color: var(--txt_anuncio);
+}
+.titulo_evento{
+    text-align: center;
+}
+.email_evento{
+    text-align: center;
+    color: var(--txt_anuncio);
+}
+.email_evento a{
+    color: var(--txt_anuncio);
+    text-decoration: none;
+}
+.btn_reserva{
+    position: absolute;
+    padding: 10px 40px;
+    background-color: var(--txt_anuncio);
+    border: none;
+}
+.btn_reserva:hover{
+    background-color: var(--txt_anuncio_hover);
+}
+/* SECCION EVENTO */
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+/* SECCION PRESENTACION */
+.presentacion p{
+    text-align: center;
+}
+.presentacion .text-italic{
+    font-style: italic;
+}
+/* SECCION PRESENTACION */
+/*----------------------------*/
+/*----------------------------*/
+/*----------------------------*/
+
+
+@media (min-width:320px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .intro h1{
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+    .intro span{
+        font-size: 12px;
+    }
+    .intro small{
+        font-size: 10px;
+    }
+    .tarjeta_evento img {
+        width: 190px;
+        height: 190px;
+    }
+    .tarjeta{
+        width: 240px;
+        top: 240px;
+    }
+    .fecha_evento{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .email_evento{
+        font-size: 12px;
+    }
+    .btn_reserva{
+        bottom: 90px;
+    }
+}
+@media (min-width:481px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    .intro h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .intro span{
+        font-size: 17px;
+    }
+    .intro small{
+        font-size: 13px;
+    }
+}
+@media (min-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .intro{
+        background-attachment: fixed;
+    }
+    .intro h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .tarjeta_evento img{
+        width: 283px;
+        height: 218px;
+    }
+    .tarjeta{
+        width: 369px;
+        top: 270px;
+    }
+    .fecha_evento{
+        font-size: 16px;
+    }
+    .email_evento{
+        font-size: 17px;
+    }
+    .btn_reserva{
+        bottom: 60px;
+    }
+    .presentacion p{
+        text-align: left;
+    }
+}
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .intro h1{
+        font-size: 80px;
+    }
+    .intro span{
+        font-size: 25px;
+    }
+    .intro small{
+        font-size: 18px;
+    }
+}
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .intro h1{
+        font-size: 100px;
+    }
+    .intro span{
+        text-shadow: rgb(0 0 0 / 40%) 0px 4px 5px;
+    }
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    .intro h1{
+        font-size: 117px;
+    }
+}
